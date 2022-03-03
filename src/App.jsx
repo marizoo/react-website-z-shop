@@ -5,6 +5,7 @@ import Hamburger1 from "./UI/Hamburger1";
 import ToggleTheme from "./UI/ToggleTheme";
 import Navbar from "./components/navbar/Navbar";
 import Hero from "./components/hero/Hero";
+import Footer from "./components/footer/Footer";
 
 const ScApp = styled.div`
     display: flex;
@@ -35,6 +36,7 @@ const App = () => {
                 />
                 <Navbar toggleMenu={toggleMenu} clickToClose={clickToClose} />
                 <Hero />
+                <Footer />
             </ScApp>
         </>
     );

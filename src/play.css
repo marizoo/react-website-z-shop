@@ -1,3 +1,7 @@
+.ex{
+    .navbar__links-li-icon::nth-of-child(1) {
+}
+
 .light-theme{
         /* ----- Colors ------ */
         --color-brand: #ff69b4;;
