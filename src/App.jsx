@@ -6,6 +6,7 @@ import ToggleTheme from "./UI/ToggleTheme";
 import Navbar from "./components/navbar/Navbar";
 import Hero from "./components/hero/Hero";
 import Footer from "./components/footer/Footer";
+import Announcement from "./components/announcement/Announcement";
 
 const ScApp = styled.div`
     display: flex;
@@ -36,6 +37,7 @@ const App = () => {
                 />
                 <Navbar toggleMenu={toggleMenu} clickToClose={clickToClose} />
                 <Hero />
+                <Announcement />
                 <Footer />
             </ScApp>
         </>
