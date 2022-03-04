@@ -85,9 +85,10 @@ export const ScAnnouncement = styled.div`
         margin: 1.5rem 0;
         font-size: 1.1rem;
         line-height: 130%;
+        letter-spacing: 1px;
         /* 992 */
         ${tabletMd({
-            letterSpacing: "1px",
+            letterSpacing: "1.25px",
         })}
     }
     .announcement__data-button {

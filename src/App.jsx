@@ -7,6 +7,7 @@ import Navbar from "./components/navbar/Navbar";
 import Hero from "./components/hero/Hero";
 import Footer from "./components/footer/Footer";
 import Announcement from "./components/announcement/Announcement";
+import Gallery from "./components/gallery/Gallery";
 
 const ScApp = styled.div`
     display: flex;
@@ -37,6 +38,7 @@ const App = () => {
                 />
                 <Navbar toggleMenu={toggleMenu} clickToClose={clickToClose} />
                 <Hero />
+                <Gallery />
                 <Announcement />
                 <Footer />
             </ScApp>
