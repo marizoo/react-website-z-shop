@@ -20,7 +20,7 @@ const Announcement = () => {
                             Latest stylish shoe
                         </h3>
                         <p className="announcement__data-desc">
-                            Nike Hulk2022 running shoe{" "}
+                            Nike Hulk 2022 mutant{" "}
                         </p>
                         <div className="announcement__data-button">
                             <button className="announcement__data-button-btn">
