@@ -36,7 +36,6 @@ export const ScNavbar = styled.div`
     }
 
     .navbar__logo-text {
-        margin-left: rem;
         color: var(--color-text-1);
         text-transform: uppercase;
         letter-spacing: 1px;
@@ -114,20 +113,28 @@ export const ScNavbar = styled.div`
     .navbar__links-li-icon {
         font-size: 1.2rem;
         margin-right: 1.8rem;
+        display: none;
 
         &:hover {
             color: var(--color-brand);
         }
+
+        /* 992 */
+        ${tabletMd({ display: "block" })}
     }
 
     .navbar__links-li-icon-1 {
         font-size: 1.2rem;
         margin-right: 1.8rem;
         margin-left: 2.5rem;
+        display: none;
 
         &:hover {
             color: var(--color-brand);
         }
+
+        /* 992 */
+        ${tabletMd({ display: "block" })}
     }
 `;
 

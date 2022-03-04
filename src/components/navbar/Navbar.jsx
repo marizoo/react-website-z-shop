@@ -9,7 +9,7 @@ const Navbar = ({ toggleMenu, clickToClose }) => {
         <ScNavbar>
             <div className="navbar__container">
                 <div className="navbar__logo">
-                    <p className="navbar__logo-text">Z-shop</p>
+                    <h3 className="navbar__logo-text">Z-shop</h3>
                 </div>
             </div>
             <div

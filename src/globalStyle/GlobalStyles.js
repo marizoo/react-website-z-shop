@@ -28,6 +28,12 @@ img {
 a {
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+a:hover{
+    color: var(--color-brand);
 }
 
 button{
@@ -72,20 +78,21 @@ ul {
 /*  the colors below have a dark themed version: refer to: REF: A001 (line +- 55  ) */
 --color-text-1: #202020;
 --color-text-2: #414141;
---color-bg-1: #f1f1f1;
+/* --color-bg-1: #f1f1f1; */
+--color-bg-1: #fdfdfd;
 --color-bg-2: #ebebeb;
 --color-bg-dark: #1d1d1d;
 --color-bg-dark-1: #303030;
 --color-bg-dark-text: #f7f7f7;
---color-bg-dark-2: #111111;
+--color-bg-dark-dark: #000e24;
 }
 
 .dark-theme{
-    --color-bg-dark-2: #868686;
+    --color-bg-dark-dark: #0f1f44;
     --color-text-1: #f1f1f1;
     --color-text-2: #ebebeb;
-    --color-bg-1: #202020;
-    --color-bg-2: #2e2d2d;
+    --color-bg-1: #020f24;
+    --color-bg-2: #021430;
     --color-bg-dark: #f7f7f7;
     --color-bg-dark-1: #e0dfdf;
     --color-bg-dark-text: #1d1d1d;
