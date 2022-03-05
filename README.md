@@ -32,5 +32,5 @@
 
 
 ## IMAGE:
-![Screenshot of the App](./screenshots/t.b.c)
+![Screenshot of the App](./screenshots/60.z-shop.png)
 
