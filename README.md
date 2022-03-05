@@ -1,24 +1,30 @@
 ## DESCRIPTION:
 - An E-commerce UI made with React + styled component.
-- [Youtube Video of the App](https://youuuuuuuuuuuuuu)
+- [Youtube Video of the App](t.b.c)
 
 ## OUTCOME:
 - Built mobile first, it is responsive with light/dark theme.
-- link to the UI's video on youtube: https://youuuuuuuuuuuuu
+- link to the UI's video on youtube: t.b.c
 
 ## TECH STACKS:
 - React,
 - Icons: React-icons,
 - Hooks: useState.
-- styling: Styled Components (with css animations)
+- styling: Styled Components.
 
 ## PROGRESS:
-- Done: 5%;
+- 70%;
 - Mobile Responsive? YES.
+
+## TODO:
+### Refer to: src -> components -> Gallery.jsx.
+- images won't show. 
+- Fav-icon button is set to all, separate them.
 
 ## How to run
 `yarn install`
 `yarn start`
+
 ## View other projects:
 - [My Blog](https://hashnode.com/@marizoo)
 - [My Pinterest](https://pin.it/16vGwjy)
@@ -26,5 +32,5 @@
 
 
 ## IMAGE:
-![Screenshot of the App](./screenshots/600000000000000000)
+![Screenshot of the App](./screenshots/t.b.c)
 
