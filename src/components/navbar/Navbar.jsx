@@ -6,7 +6,7 @@ import { GrCart } from "react-icons/gr";
 
 const Navbar = ({ toggleMenu, clickToClose }) => {
     return (
-        <ScNavbar>
+        <ScNavbar id="home">
             <div className="navbar__container">
                 <div className="navbar__logo">
                     <h3 className="navbar__logo-text">Z-shop</h3>
@@ -31,13 +31,13 @@ const Navbar = ({ toggleMenu, clickToClose }) => {
                         </a>
                     </li>
                     <li className="navbar__links-li">
-                        <a href="#price" onClick={clickToClose}>
-                            Price
+                        <a href="#announcement" onClick={clickToClose}>
+                            Promo
                         </a>
                     </li>
                     <li className="navbar__links-li">
-                        <a href="#stories" onClick={clickToClose}>
-                            Stories
+                        <a href="#footer" onClick={clickToClose}>
+                            FAQ
                         </a>
                     </li>
                     <li className="navbar__links-li-icon-1">

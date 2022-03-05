@@ -24,7 +24,7 @@ export const ScNavbar = styled.div`
         left: 0;
         font-family: var(--font-family-narrow);
         color: var(--color-text-1);
-        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+        box-shadow: var(--color-boxShadow);
         z-index: 12;
     }
 

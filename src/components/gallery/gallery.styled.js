@@ -1,4 +1,10 @@
 import styled from "styled-components";
+import {
+    laptop,
+    tablet,
+    tabletLg,
+    tabletMd,
+} from "../../globalStyle/media.styled";
 
 export const ScGallery = styled.div`
     height: 100%;
@@ -7,16 +13,14 @@ export const ScGallery = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    color: var(--color-text-1);
     /* background: var(--color-bg-1); */
-    color: var(--color-text-2);
-    margin-top: 10%;
 
     .gallery__container {
         position: relative;
-        background: var(--color-bg-2);
         min-width: 280px;
         width: 100%;
-        min-height: 300px;
+        height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -24,24 +28,41 @@ export const ScGallery = styled.div`
 
     /* NAVBAR ------------- */
     .gallery__container-navbar {
-        flex: 3;
         display: flex;
+        flex-direction: column;
         width: 100%;
         margin-bottom: 2rem;
+        /* 992 */
+        ${tabletMd({
+            flexDirection: "row",
+            justifyContent: "space-between",
+        })};
     }
     /* Navbar List */
     .gallery__navbar-list {
-        flex: 4;
+        flex: 11;
         height: 100%;
     }
     .gallery__navbar-ul {
         display: flex;
         flex-wrap: wrap;
-        background: pink;
         display: flex;
         flex-direction: column;
-        line-height: 180%;
+        line-height: 200%;
         text-align: center;
+        margin-bottom: 1rem;
+        /* 768 */
+        ${tablet({
+            flexDirection: "row",
+            justifyContent: "space-between",
+            marginBottom: "2rem",
+            padding: "0 2rem",
+        })}
+        /* 992 */
+        ${tabletMd({
+            marginRight: "3rem",
+            padding: "0 3rem",
+        })};
     }
     .gallery__navbar-li {
     }
@@ -54,25 +75,26 @@ export const ScGallery = styled.div`
 
     /* Navbar Arrow */
     .gallery__navbar-arrow {
-        flex: 2;
+        flex: 1;
         height: 100%;
         width: 100%;
         display: flex;
-        background: yellow;
         align-items: center;
         justify-content: center;
     }
     .gallery__navbar-arrow-left {
         cursor: pointer;
         transition: 0.4s;
-        margin-right: 0.8rem;
+        margin-right: 1rem;
         font-size: 1.5rem;
+        font-weight: 600;
     }
 
     .gallery__navbar-arrow-right {
         cursor: pointer;
         transition: 0.4s;
         font-size: 1.5rem;
+        font-weight: 600;
     }
 
     .gallery__navbar-arrow-left:hover,
@@ -82,53 +104,39 @@ export const ScGallery = styled.div`
 
     /* PRODUCTS ------------- */
     .gallery__container-products {
-        flex: 9;
+        width: 100%;
+        height: 100%;
+        max-width: 1200px;
         display: flex;
         flex-direction: column;
         align-items: center;
         row-gap: 4rem;
-    }
-
-    /* Product Card */
-    .gallery__products-card {
-        width: 280px;
-        height: 360px;
-        background: gray;
-    }
-
-    .gallery__products-card-img-container {
-        width: 100%;
-        height: 85%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: lightgray;
-    }
-    .gallery__products-card-img-img {
-        width: 50%;
-    }
-
-    .gallery__products-card-data-container {
-        width: 100%;
-        height: 17%;
-        background: pink;
-        line-height: 180%;
-        position: relative;
-    }
-    .gallery__product-card-data-title {
-        font-size: 1.1rem;
-        letter-spacing: 1px;
-        margin-left: 2%;
-    }
-    .gallery__product-card-data-price {
-        font-weight: 600;
-        margin-left: 2%;
-    }
-
-    .gallery__product-card-data-icon {
-        position: absolute;
-        top: 15%;
-        right: 6%;
-        font-size: 1.2rem;
+        /* 768 */
+        ${tablet({
+            flexDirection: "row",
+            flexWrap: "wrap",
+            columnGap: "4rem",
+            justifyContent: "center",
+        })};
+        /* 992 */
+        ${tabletMd({ columnGap: "8rem" })};
+        /* 1050 */
+        ${tabletLg({ columnGap: "3rem" })};
+        /* 1200 */
+        ${laptop({ columnGap: "5rem" })}
     }
 `;
+
+// How to use media queries
+/* /420 */
+// ${mobile({})}
+/* 576 */
+// ${mobileMd({})}
+/* 768 */
+// ${tablet({})}
+/* 992 */
+// ${tabletMd({})}
+/* 1050 */
+// ${tabletLg({})}
+/* 1200 */
+// ${laptop({})}

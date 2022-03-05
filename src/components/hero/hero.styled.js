@@ -15,7 +15,7 @@ export const ScHero = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--color-bg-2);
+    background: var(--color-bg-1);
 
     .hero__container {
         position: relative;

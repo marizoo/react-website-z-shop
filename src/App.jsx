@@ -13,6 +13,7 @@ const ScApp = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: var(--color-bg-1);
 `;
 
 const App = () => {

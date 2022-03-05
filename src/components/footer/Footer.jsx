@@ -5,7 +5,7 @@ import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
     return (
-        <ScFooter>
+        <ScFooter id="footer">
             <Section>
                 <div className="footer__container">
                     {/* container 1 */}
@@ -38,19 +38,16 @@ const Footer = () => {
                         </h4>
                         <ul className="footer__links-ul">
                             <li className="footer__links-li">
-                                <a href="#">Home</a>
+                                <a href="#home">Home</a>
                             </li>
                             <li className="footer__links-li">
-                                <a href="#">Gallery</a>
+                                <a href="#gallery">Gallery</a>
                             </li>
                             <li className="footer__links-li">
-                                <a href="#">Price</a>
+                                <a href="#announcement">Promo</a>
                             </li>
                             <li className="footer__links-li">
-                                <a href="#">Stories</a>
-                            </li>
-                            <li className="footer__links-li">
-                                <a href="#">FAQ</a>
+                                <a href="#footer">FAQ</a>
                             </li>
                         </ul>
                     </div>

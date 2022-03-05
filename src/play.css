@@ -1,5 +1,8 @@
 .ex{
-    .navbar__links-li-icon::nth-of-child(1) {
+    color: #fdfdfd;
+    color: #010d20;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 5px rgba(255, 255, 255, 0.288);
 }
 
 .light-theme{
@@ -10,7 +13,7 @@
         --color-white: #fff;
         --color-black: #000;
         --color-gray: gray;
-        --color-gray-light: lightgray;
+        --color-gray-light: #ebebeb;
         /*  the colors below have a dark themed version: refer to: REF: A001 (line +- 55  ) */
         --color-text-1: #202020;
         --color-text-2: #414141;

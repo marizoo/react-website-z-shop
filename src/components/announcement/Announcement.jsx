@@ -5,7 +5,7 @@ import Shoe from "../../images/running_shoes_sm.png";
 
 const Announcement = () => {
     return (
-        <ScAnnouncement>
+        <ScAnnouncement id="announcement">
             <Section>
                 <div className="announcement__container">
                     <div className="announcement__img">

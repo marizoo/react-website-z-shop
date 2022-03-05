@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import {
     laptop,
-    laptopMd,
     mobile,
     mobileMd,
     tablet,
@@ -22,7 +21,7 @@ const ScSection = styled.div`
         ${tablet({ padding: "5.75rem 3.5rem" })};
         ${tabletMd({ padding: "6rem 4rem" })};
         ${laptop({ padding: "6.25rem 6rem" })};
-        ${laptopMd({})};
+        
 }
 `;
 

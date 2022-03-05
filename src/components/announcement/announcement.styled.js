@@ -15,7 +15,6 @@ export const ScAnnouncement = styled.div`
     justify-content: center;
     background: var(--color-bg-1);
     color: var(--color-text-2);
-    margin-top: 10%;
 
     .announcement__container {
         position: relative;
@@ -101,6 +100,12 @@ export const ScAnnouncement = styled.div`
         border: 0;
         background: var(--color-brand);
         color: white;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+
+    .announcement__data-button-btn:hover {
+        background: var(--color-brand-dark);
     }
 `;
 

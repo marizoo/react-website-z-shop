@@ -2,11 +2,6 @@ import { createGlobalStyle } from "styled-components";
 
 // ALL GLOBAL STYLE
 export const GlobalStyles = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-/* font-family: 'Archivo Narrow', sans-serif; */
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;500;600;700&display=swap');
-/* font-family: 'Playfair Display', serif; */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
 
 *,
 *::before,
@@ -78,24 +73,28 @@ ul {
 /*  the colors below have a dark themed version: refer to: REF: A001 (line +- 55  ) */
 --color-text-1: #202020;
 --color-text-2: #414141;
-/* --color-bg-1: #f1f1f1; */
+--color-bg: #f7f7f7;
 --color-bg-1: #fdfdfd;
 --color-bg-2: #ebebeb;
 --color-bg-dark: #1d1d1d;
 --color-bg-dark-1: #303030;
 --color-bg-dark-text: #f7f7f7;
 --color-bg-dark-dark: #000e24;
+--color-bg-galleryCard: #f0f0f0;
+--color-boxShadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .dark-theme{
     --color-bg-dark-dark: #0f1f44;
     --color-text-1: #f1f1f1;
     --color-text-2: #ebebeb;
+    --color-bg: #010d20;
     --color-bg-1: #020f24;
     --color-bg-2: #021430;
     --color-bg-dark: #f7f7f7;
     --color-bg-dark-1: #e0dfdf;
     --color-bg-dark-text: #1d1d1d;
+    --color-boxShadow: 0 10px 10px rgba(255, 255, 255, 0.25);
     /* below colors, are the same in light theme */
     --color-brand: #ff69b4;;
     --color-brand-dark: #c25189;
@@ -104,6 +103,8 @@ ul {
     --color-black: #000;
     --color-gray: gray;
     --color-gray-light: lightgray;
+--color-bg-galleryCard: #f0f0f0;
+
 }
 
 /* ----- Font Weight ----- */

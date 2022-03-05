@@ -1,11 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import { ScGallery } from "./gallery.styled";
 import Section from "../../UI/Section";
-import { BsArrowLeft, BsArrowRight, BsSuitHeartFill } from "react-icons/bs";
-import Jacket from "../../images/jacket.png";
-import Jeep from "../../images/jeep.png";
+import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
+import GalleryCard from "../galleryCard/GalleryCard";
+import { products } from "../../datas/products";
+
+// import Jacket from "../../images/jacket.png";
+// import Jeep from "../../images/jeep.png";
+// import Lighter from "../../images/lighter.png";
+// import Perfume from "../../images/perfume.png";
+// import Scooter from "../../images/scooter.png";
+// import Sofa from "../../images/sofa.png";
+// import Wallet from "../../images/wallet.png";
 
 const Gallery = () => {
+    const [favorite, isFavorite] = useState(false);
+
+    const setFavorite = (id) => {
+        isFavorite(!favorite);
+    };
+
+    // const GalleryImg = [Jacket, Jeep, Lighter, Perfume, Scooter, Sofa, Wallet];
+
     return (
         <ScGallery>
             <Section>
@@ -66,47 +82,15 @@ const Gallery = () => {
                     </div>
                     <div className="gallery__container-products">
                         {/* Products Card 1 */}
-                        <div className="gallery__products-card">
-                            <div className="gallery__products-card-img-container">
-                                <img
-                                    src={Jacket}
-                                    alt="product"
-                                    className="gallery__products-card-img-img"
-                                />
-                            </div>
-                            <div className="gallery__products-card-data-container">
-                                <p className="gallery__product-card-data-title">
-                                    Military Jacket
-                                </p>
-                                <p className="gallery__product-card-data-price">
-                                    $1299,-
-                                </p>
-                                <span className="gallery__product-card-data-icon">
-                                    <BsSuitHeartFill />
-                                </span>
-                            </div>
-                        </div>
-                        {/* Products Card 2 */}
-                        <div className="gallery__products-card">
-                            <div className="gallery__products-card-img-container">
-                                <img
-                                    src={Jeep}
-                                    alt="product"
-                                    className="gallery__products-card-img-img"
-                                />
-                            </div>
-                            <div className="gallery__products-card-data-container">
-                                <p className="gallery__product-card-data-title">
-                                    Jeep 4wd
-                                </p>
-                                <p className="gallery__product-card-data-price">
-                                    $ 229,000,-
-                                </p>
-                                <span className="gallery__product-card-data-icon">
-                                    <BsSuitHeartFill />
-                                </span>
-                            </div>
-                        </div>
+                        {products.map((product) => (
+                            <GalleryCard
+                                key={product.id}
+                                product={product}
+                                favorite={favorite}
+                                onSetFavorite={setFavorite}
+                            />
+                        ))}
+
                         {/* Products Card End */}
                     </div>
                 </div>
