@@ -5,22 +5,14 @@ import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 import GalleryCard from "../galleryCard/GalleryCard";
 import { products } from "../../datas/products";
 
-// import Jacket from "../../images/jacket.png";
-// import Jeep from "../../images/jeep.png";
-// import Lighter from "../../images/lighter.png";
-// import Perfume from "../../images/perfume.png";
-// import Scooter from "../../images/scooter.png";
-// import Sofa from "../../images/sofa.png";
-// import Wallet from "../../images/wallet.png";
-
 const Gallery = () => {
-    const [favorite, isFavorite] = useState(false);
+    const [datas, setDatas] = useState(products);
 
-    const setFavorite = (id) => {
-        isFavorite(!favorite);
+    const setFavorite = (index) => {
+        const newDatas = [...datas];
+        newDatas[index].isFavorite = !newDatas[index].isFavorite;
+        setDatas(newDatas);
     };
-
-    // const GalleryImg = [Jacket, Jeep, Lighter, Perfume, Scooter, Sofa, Wallet];
 
     return (
         <ScGallery>
@@ -82,12 +74,12 @@ const Gallery = () => {
                     </div>
                     <div className="gallery__container-products">
                         {/* Products Card 1 */}
-                        {products.map((product) => (
+                        {datas.map((data, index) => (
                             <GalleryCard
-                                key={product.id}
-                                product={product}
-                                favorite={favorite}
+                                key={data.id}
+                                product={data}
                                 onSetFavorite={setFavorite}
+                                index={index}
                             />
                         ))}
 

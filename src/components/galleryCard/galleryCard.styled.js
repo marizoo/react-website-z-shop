@@ -10,14 +10,14 @@ export const ScGalleryCard = styled.div`
 
     .gallery__products-card-img-container {
         width: 100%;
-        height: 85%;
+        height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         background: var(--color-bg-galleryCard);
     }
     .gallery__products-card-img-img {
-        width: 50%;
+        width: 70%;
         color: var(--color-text-2);
     }
 

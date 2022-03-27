@@ -9,7 +9,7 @@ import {
 } from "../../globalStyle/media.styled";
 
 export const ScHero = styled.div`
-    height: 100vh;
+    /* min-height: 100vh; */
     width: 100%;
     max-width: 1200px;
     display: flex;
@@ -22,17 +22,17 @@ export const ScHero = styled.div`
         background: pink;
         max-width: 100%;
         min-width: 280px;
-        height: 100%;
+        /* height: 100%; */
         border-radius: 30px;
         margin-top: 3rem;
-        padding: 3rem;
+        padding: 3rem 3rem 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
 
         /* 1050 */
-        ${tabletLg({ flexDirection: "row", height: "80%" })};
+        /* ${tabletLg({ height: "80%" })}; */
     }
 
     /* Data ----- */
@@ -120,22 +120,26 @@ export const ScHero = styled.div`
         margin: 2rem 0;
         display: flex;
         place-content: center;
+        /* 1200 */
+        /* ${laptop({ height: "80%", width: "60%" })} */
     }
 
     .hero__img-img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        display: none;
+
         /* 576 */
-        ${mobileMd({ width: "80%" })};
+        ${mobileMd({ display: "block", width: "80%" })};
         /* 768 */
-        ${tablet({ width: "60%" })};
+        /* ${tablet({ width: "60%" })}; */
         /* 992 */
-        ${tabletMd({ width: "50%" })};
+        /* ${tabletMd({ width: "50%" })}; */
         /* 1050 */
-        ${tabletLg({ height: "75%", width: "65%" })};
+        /* ${tabletLg({ height: "75%", width: "65%" })}; */
         /* 1200 */
-        ${laptop({ height: "80%", width: "60%" })}
+        /* ${laptop({ height: "80%", width: "60%" })} */
     }
 
     /* Social Media */
