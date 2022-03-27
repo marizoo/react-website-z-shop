@@ -29,4 +29,4 @@
 
 
 ## IMAGE:
-![Screenshot of the App](./screenshots/60-reactUI-zshop-600.jpg)
+![Screenshot of the App](./src/screenshots/60-reactUI-zshop-600.jpg)
