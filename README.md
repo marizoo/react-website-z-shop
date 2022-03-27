@@ -1,6 +1,6 @@
 ## DESCRIPTION:
 - A simple E-commerce site made with React.
-- [Youtube Video of the App](https://youtu.be/J_h2WUWCQFc)
+- [Youtube Video of the App](https://youtu.be/HvuW9dxYcVg)
 
 ## OUTCOME:
 - Practise making E-commerce site with React.
